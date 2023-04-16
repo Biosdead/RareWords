@@ -1,4 +1,4 @@
-palavras= [ // JÁ TENHO 202 palavras 
+palavras= [ // JÁ TENHO 366 palavras 
     {
       "palavra": "anfractuoso",
       "significado": "Que tem muitas dobras ou sinuosidades; cheio de curvas e recortes.",

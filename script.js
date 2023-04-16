@@ -2,8 +2,7 @@ GetDay();
 var dayIndex = GetDayIndex();
 var globalIndex = dayIndex;
 GetWord(dayIndex);
-alert(Object.keys(palavras).length-1); //  Mostra o tamanho atual do JSON 
-
+// alert(Object.keys(palavras).length-1); //  Mostra o tamanho atual do JSON, ou seja a quantidade de palavras.  
 
 
 function GetDayIndex(){
