@@ -4,9 +4,9 @@ var globalIndex = 0;
 
 window.onload = function(){
     GetDay();
-    // dayIndex = GetDayIndex();
-    // globalIndex = dayIndex;
-    // GetWord(dayIndex);
+    dayIndex = GetDayIndex();
+    globalIndex = dayIndex;
+    GetWord(dayIndex);
     // alert(Object.keys(palavras).length-1); //  Mostra o tamanho atual do JSON, ou seja a quantidade de palavras.  
     alert("Version 1.20");
 };
@@ -26,9 +26,9 @@ function GetDayIndex(){
   
 
 function GetWord(dia){
-    let palavraDoDia = ""+palavras[dia].palavra;
-    let significadoDoDia = palavras[dia].significado;
-    let exemploDoDia = palavras[dia].exemplo;
+    var palavraDoDia = ""+palavras[dia].palavra;
+    var significadoDoDia = palavras[dia].significado;
+    var exemploDoDia = palavras[dia].exemplo;
     palavraDoDia = palavraDoDia.toUpperCase();
     document.getElementById("word").innerText = "Palavra" + "("+ globalIndex + "): "+ palavraDoDia;
     document.getElementById("meaning").innerText = "Significado: " + significadoDoDia;
@@ -44,10 +44,6 @@ function GetDay(){
         var year = today.getFullYear();
         var realDate = day + "/" + month + "/" + year;
         document.getElementById("Date").innerText += " (" + realDate + ")";
-
-        dayIndex = GetDayIndex();
-        globalIndex = dayIndex;
-        GetWord(dayIndex);
     }
 
 function NextWord(){
