@@ -4,7 +4,7 @@ var globalIndex = 0;
 
 window.onload = function(){
     GetDay();
-    alert(GetDayIndex());
+    // alert(GetDayIndex());
     dayIndex = GetDayIndex();
     globalIndex = dayIndex;
     GetWord(dayIndex);
@@ -17,10 +17,16 @@ window.onload = function(){
 
 function GetDayIndex(){
   var diadeHoje = new Date();
+  alert("Dia de Hoje: " + diadeHoje);
   var anoAtual = diadeHoje.getFullYear();
+  alert("Ano Atual: " + anoAtual);
   var StringdoDiaPrimeiroDeJaneirodoAnoAtual = "01,01,"+anoAtual;
+  alert("String Primeiro De Janeirodo Ano Atual: " + StringdoDiaPrimeiroDeJaneirodoAnoAtual);
   var DataPrimeirodeJaneiroAnoAtual = new Date(StringdoDiaPrimeiroDeJaneirodoAnoAtual);
+  alert("DataPrimeirodeJaneiroAnoAtual: " + DataPrimeirodeJaneiroAnoAtual);
   var QtdMilisegundosPorDia = 86400000;
+  alert("QtdMilisegundosPorDia: " + QtdMilisegundosPorDia);
+  alert("Retorno da Função: " + Math.ceil((diadeHoje - DataPrimeirodeJaneiroAnoAtual)/QtdMilisegundosPorDia));
   return Math.ceil((diadeHoje - DataPrimeirodeJaneiroAnoAtual)/QtdMilisegundosPorDia);
 }    
   
