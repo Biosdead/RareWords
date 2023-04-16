@@ -1,9 +1,10 @@
-// O que Falta Fazer: Chamar função de quando aa pagina estiver carregada fazer a chamada das funções;Melhorar o css a ponto dele ficar igual um aplicativo; Verificar pq depois das 22 hrs ele já mostra a data do dia seguinte
+// O que Falta Fazer: Verificar pq depois das 22 hrs ele já mostra a data do dia seguinte; Corrigir o bug do mobile
 var dayIndex = 0;
 var globalIndex = 0;
 
 window.onload = function(){
     GetDay();
+    alert(GetDayIndex());
     dayIndex = GetDayIndex();
     globalIndex = dayIndex;
     GetWord(dayIndex);
@@ -19,7 +20,7 @@ function GetDayIndex(){
   var anoAtual = diadeHoje.getFullYear();
   var StringdoDiaPrimeiroDeJaneirodoAnoAtual = "01,01,"+anoAtual;
   var DataPrimeirodeJaneiroAnoAtual = new Date(StringdoDiaPrimeiroDeJaneirodoAnoAtual);
-  const QtdMilisegundosPorDia = 86400000;
+  var QtdMilisegundosPorDia = 86400000;
   return Math.ceil((diadeHoje - DataPrimeirodeJaneiroAnoAtual)/QtdMilisegundosPorDia);
 }    
   
