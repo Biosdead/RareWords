@@ -1,0 +1,13 @@
+html{
+    text-align: center;
+    /* background-color: slategrey; */
+}
+
+body{
+    font-family: 'Lobster', cursive;
+    /* margin-top: 15%;  */
+} 
+
+button{
+    width: 45%;
+}

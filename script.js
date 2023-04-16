@@ -1,3 +1,5 @@
+// O que Falta Fazer: Chamar função de quando aa pagina estiver carregada fazer a chamada das funções;Melhorar o css a ponto dele ficar igual um aplicativo; Verificar pq depois das 22 hrs ele já mostra a data do dia seguinte
+
 GetDay();
 var dayIndex = GetDayIndex();
 var globalIndex = dayIndex;
@@ -29,7 +31,7 @@ function GetWord(dia){
 
 function GetDay(){    
         var today = new Date();
-        var day = (today.getUTCDate() < 10 ? "0" + today.getUTCDate() : today.getUTCDate()); // retorna o dia do mês 1 - 31
+        var day = (today.getDate() < 10 ? "0" + today.getDate() : today.getDate()); // retorna o dia do mês 1 - 31
         var realMonth = today.getMonth() + 1; // retorna 0 para Janeiro e 11 para Dezembro por isso somar mais 1
         var month = (realMonth < 10 ? "0" + realMonth : realMonth); 
         var year = today.getFullYear();

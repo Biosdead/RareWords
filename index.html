@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <style>
-        html{
-            text-align: center;
-            background-color: slategrey;
-        }
-        body{
-            font-family: 'Lobster', cursive;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,23 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Palavras Raras</title>
-    <h1 class="alert alert-primary" role="alert" id="Date">Palavras Raras - uma preciosidade por dia </h1>
 </head>
+<header>
+    <h1 class="alert alert-primary" role="alert" id="Date">Palavras Raras - uma preciosidade por dia </h1>
+</header>
 <body>
-    <div class="alert alert-info" role="alert">
+    <div class="alert alert-info position-sticky" role="alert">
         <h4 class="alert-heading" id="word">Palavra</h4>
         <hr>
         <p class="mb-0" id="meaning">Significado</p>
         <hr>
         <p class="mb-0" id="sentence">Frase<d/p>
       </div>
-      
-<button onclick="PreviousWord()" type="button" class="btn btn-success btn-lg">Anterior</button>
-<button onclick="NextWord()" type="button" class="btn btn-success btn-lg">Proxima</button>
+
 
 </body>
-<footer class="alert alert-dark" role="alert">Criado por <b>Lennon Sales Furtado</b> - 2023</footer>
+<footer class="alert alert-dark fixed-bottom" role="alert">
+    <button onclick="PreviousWord()" type="button" class="btn btn-success btn-lg">Anterior</button>
+    <button onclick="NextWord()" type="button" class="btn btn-success btn-lg">Proxima</button>
+    <p>Criado por <b>Lennon Sales Furtado</b> - 2023</p>
+</footer>
 <script src="baseDeDados.js"> 
 </script>
 <script src="script.js">
