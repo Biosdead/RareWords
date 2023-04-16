@@ -8,7 +8,7 @@ window.onload = function(){
     globalIndex = dayIndex;
     GetWord(dayIndex);
     // alert(Object.keys(palavras).length-1); //  Mostra o tamanho atual do JSON, ou seja a quantidade de palavras.  
-    alert("Version 1.20");
+    // alert("Version 1.20");
 };
 
 
