@@ -1,10 +1,15 @@
 // O que Falta Fazer: Chamar função de quando aa pagina estiver carregada fazer a chamada das funções;Melhorar o css a ponto dele ficar igual um aplicativo; Verificar pq depois das 22 hrs ele já mostra a data do dia seguinte
+var dayIndex = 0;
+var globalIndex = 0;
 
-GetDay();
-var dayIndex = GetDayIndex();
-var globalIndex = dayIndex;
-GetWord(dayIndex);
-// alert(Object.keys(palavras).length-1); //  Mostra o tamanho atual do JSON, ou seja a quantidade de palavras.  
+window.onload = function() {
+    GetDay();
+    dayIndex = GetDayIndex();
+    globalIndex = dayIndex;
+    GetWord(dayIndex);
+    // alert(Object.keys(palavras).length-1); //  Mostra o tamanho atual do JSON, ou seja a quantidade de palavras.  
+};
+
 
 
 function GetDayIndex(){
