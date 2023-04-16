@@ -2,14 +2,14 @@
 var dayIndex = 0;
 var globalIndex = 0;
 
-window.onload = function() {
-    GetDay();
-    dayIndex = GetDayIndex();
-    globalIndex = dayIndex;
-    GetWord(dayIndex);
-    // alert(Object.keys(palavras).length-1); //  Mostra o tamanho atual do JSON, ou seja a quantidade de palavras.  
-    alert("Version 1.14")
-};
+// window.onload = function inicio() {
+//     GetDay();
+//     dayIndex = GetDayIndex();
+//     globalIndex = dayIndex;
+//     GetWord(dayIndex);
+//     // alert(Object.keys(palavras).length-1); //  Mostra o tamanho atual do JSON, ou seja a quantidade de palavras.  
+//     alert("Version 1.14")
+// };
 
 
 
