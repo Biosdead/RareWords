@@ -12,6 +12,15 @@ var globalIndex = 0;
 // };
 
 
+function RunCode(){
+  GetDay();
+  dayIndex = GetDayIndex();
+  globalIndex = dayIndex;
+  GetWord(dayIndex);
+  alert("Version 1.17");
+}
+
+
 
 function GetDayIndex(){
   var diadeHoje = new Date();
