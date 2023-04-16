@@ -9,6 +9,10 @@ body{
     /* margin-top: 15%;  */
 } 
 
+footer{
+    font-size: smaller;
+}
+
 button{
     width: 45%;
 }
