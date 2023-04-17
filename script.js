@@ -20,7 +20,7 @@ function GetDayIndex(){
   alert("Dia de Hoje: " + diadeHoje);
   var anoAtual = diadeHoje.getFullYear();
   alert("Ano Atual: " + anoAtual);
-  var StringdoDiaPrimeiroDeJaneirodoAnoAtual = "01,01,"+anoAtual;
+  var StringdoDiaPrimeiroDeJaneirodoAnoAtual = "01/01/"+anoAtual;
   alert("String Primeiro De Janeirodo Ano Atual: " + StringdoDiaPrimeiroDeJaneirodoAnoAtual);
   var DataPrimeirodeJaneiroAnoAtual = new Date(StringdoDiaPrimeiroDeJaneirodoAnoAtual);
   alert("DataPrimeirodeJaneiroAnoAtual: " + DataPrimeirodeJaneiroAnoAtual);
