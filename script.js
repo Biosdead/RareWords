@@ -1,15 +1,13 @@
-// O que Falta Fazer: Verificar pq depois das 22 hrs ele já mostra a data do dia seguinte; Corrigir o bug do mobile
+// O que Falta Fazer: Verificar pq depois das 22 hrs ele já mostra a data do dia seguinte. 
 var dayIndex = 0;
 var globalIndex = 0;
 
 window.onload = function(){
     GetDay();
-    // alert(GetDayIndex());
     dayIndex = GetDayIndex();
     globalIndex = dayIndex;
     GetWord(dayIndex);
     // alert(Object.keys(palavras).length-1); //  Mostra o tamanho atual do JSON, ou seja a quantidade de palavras.  
-    // alert("Version 1.20");
 };
 
 
@@ -17,16 +15,10 @@ window.onload = function(){
 
 function GetDayIndex(){
   var diadeHoje = new Date();
-  alert("Dia de Hoje: " + diadeHoje);
   var anoAtual = diadeHoje.getFullYear();
-  alert("Ano Atual: " + anoAtual);
   var StringdoDiaPrimeiroDeJaneirodoAnoAtual = "01/01/"+anoAtual;
-  alert("String Primeiro De Janeirodo Ano Atual: " + StringdoDiaPrimeiroDeJaneirodoAnoAtual);
   var DataPrimeirodeJaneiroAnoAtual = new Date(StringdoDiaPrimeiroDeJaneirodoAnoAtual);
-  alert("DataPrimeirodeJaneiroAnoAtual: " + DataPrimeirodeJaneiroAnoAtual);
   var QtdMilisegundosPorDia = 86400000;
-  alert("QtdMilisegundosPorDia: " + QtdMilisegundosPorDia);
-  alert("Retorno da Função: " + Math.ceil((diadeHoje - DataPrimeirodeJaneiroAnoAtual)/QtdMilisegundosPorDia));
   return Math.ceil((diadeHoje - DataPrimeirodeJaneiroAnoAtual)/QtdMilisegundosPorDia);
 }    
   
